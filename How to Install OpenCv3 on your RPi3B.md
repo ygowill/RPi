@@ -6,7 +6,7 @@
 使用以下命令进入系统设置界面
 
 	sudo raspi-config
-然后进入 **Advanced Options** 菜单，选择 **Expand filesystem** 然后选择 **finish**完成设置
+然后进入 **Advanced Options** 菜单，选择 **Expand filesystem** 然后选择 **finish** 完成设置
 
 在以上操作完成后，重启系统使得设置生效
 
@@ -98,6 +98,7 @@ PS：如果SD卡容量不足的话可以使用以下命令来删除不必要的�
 	source ~/.profile
 	workon cv
 然后我们可以开始设置cmake的编译条件
+
 	cd ~/opencv-3.3.0/
 	mkdir build
 	cd build
@@ -106,7 +107,7 @@ PS：如果SD卡容量不足的话可以使用以下命令来删除不必要的�
 	    -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.3.0/modules \
 	    -D BUILD_EXAMPLES=ON ..
 
-如果成功安装，你将会在以**Python 3:**开头的段落里看到python的相关地址
+如果成功安装，你将会在以 **Python3:** 开头的段落里看到python的相关地址
 
 ********************************************************
 **接下来这步较为关键，为了确保编译成功，我们需要给足够的虚拟内存**
@@ -161,7 +162,9 @@ PS：如果SD卡容量不足的话可以使用以下命令来删除不必要的�
 看到这个版本号你就可以安心了，弄了这么长时间总算结束了
 
 **但是，我们还有收尾工作要做**
+
 不要忘记把*swap size*改回来！
+
 按照上面的方法打开并将 **CONF_SWAPSIZE** 变量改回100并保存
 
 然后重启服务
